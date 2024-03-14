@@ -1,0 +1,39 @@
+<br>
+<table border="3">
+    <tr>
+        <th>AccountNumber</th>
+        <th>AccountHolderName</th>
+        <th>AccountBalance</th>
+    </tr>
+    <tr>
+        <td>{{this.source.accountId}}</td>
+        <td>{{this.source.accountName}}</td>
+        <td>{{this.source.accountBalance}}</td>
+    </tr>
+</table><br>
+<table border="3">
+    <tr>
+        <th>AccountNumber</th>
+        <th>AccountHolderName</th>
+        <th>AccountBalance</th>
+    </tr>
+    <tr>
+        <td>{{this.target.accountId}}</td>
+        <td>{{this.target.accountName}}</td>
+        <td>{{this.target.accountBalance}}</td>
+    </tr>
+</table><br>
+<table border="3">
+    <tr>
+       <td>Enter the amount to transfer</td>
+       <td><input type="number" [(ngModel)]="amountToTransfer"></td>
+    </tr>
+</table><br>
+<button (click)="localFun()">Transfer</button>
+<button (click)="transferfun1()">tranferViaService</button>
+<table>
+    <tr>
+        <td>Remark :</td>
+        <td><input type="text" [(ngModel)]="message"></td>
+    </tr>
+</table>

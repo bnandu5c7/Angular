@@ -1,0 +1,18 @@
+<p>add-book works!</p>
+<table border="3">
+    <tr>
+        <th>BookId</th>
+        <th>BookName</th>
+        <th>BookAuthor</th>
+        <th>BookPrice</th>
+    </tr>
+    <tr>
+        <td><input type="text"  [(ngModel)]="bobj.bookId"></td>
+        <td><input type="text" [(ngModel)]="bobj.bookTitle"></td>
+        <td><input type="text" [(ngModel)]="bobj.bookAuthor"></td>
+        <td><input type="number" [(ngModel)]="bobj.bookPrice"></td>
+    </tr>
+    <tr>
+        <button (click)="localAdd()">Add This Book</button>
+    </tr>
+</table>
