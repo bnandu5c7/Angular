@@ -1,0 +1,15 @@
+<table border="3">
+    <tr>
+        <th>Name</th>
+        <th>Place</th>
+        <th>Age</th>
+        <th>Qualification</th>
+    </tr>
+    <tr>
+        <td><input type="text"  [(ngModel)]="obj.name"></td>
+        <td><input type="text"  [(ngModel)]="obj.place"></td>
+        <td><input type="number"  [(ngModel)]="obj.age"></td>
+        <td><input type="text"  [(ngModel)]="obj.qualification"></td>
+    </tr>
+    <button (click)="localAdd()">Add A friend</button>
+</table>

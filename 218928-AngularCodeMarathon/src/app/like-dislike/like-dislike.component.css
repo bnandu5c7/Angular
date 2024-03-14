@@ -1,0 +1,20 @@
+h1{
+    color:blueviolet;
+    background-color:blanchedalmond;
+}
+.style1
+{
+   color:darkblue;
+   background-color:antiquewhite; 
+   padding:20px;
+   font-size: medium;
+   font-style: oblique;
+}
+.style2
+{
+    color:darkred;
+    background-color: bisque;
+    padding:20px;
+    font-size: medium;
+    font-style: oblique;
+}

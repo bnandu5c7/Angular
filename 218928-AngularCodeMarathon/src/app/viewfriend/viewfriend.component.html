@@ -1,0 +1,17 @@
+Enter the name to search:<input type="text" [(ngModel)]="nameToSearch">
+<button (click)="localView()"> Search Friend</button>
+<table *ngIf="found!=undefined">
+    <tr>
+        <th>Name</th>
+        <th>Place</th>
+        <th>Age</th>
+        <th>Qualification</th>
+    </tr>
+    <tr>
+        <td><input type="text"  [(ngModel)]="found.name"></td>
+        <td><input type="text"  [(ngModel)]="found.place"></td>
+        <td><input type="number"  [(ngModel)]="found.age"></td>
+        <td><input type="text"  [(ngModel)]="found.qualification"></td>
+    </tr>
+
+</table>

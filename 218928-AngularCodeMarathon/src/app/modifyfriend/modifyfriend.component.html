@@ -1,0 +1,15 @@
+<table border="3">
+    <tr>
+        <th>Name</th>
+        <th>Place</th>
+        <th>Age</th>
+        <th>Qualification</th>
+    </tr>
+    <tr>
+        <td><input type="text"  [(ngModel)]="eobj.name"></td>
+        <td><input type="text"  [(ngModel)]="eobj.place"></td>
+        <td><input type="number"  [(ngModel)]="eobj.age"></td>
+        <td><input type="text"  [(ngModel)]="eobj.qualification"></td>
+    </tr>
+    <button (click)="localModify()">Update A friend</button>
+</table>

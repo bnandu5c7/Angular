@@ -1,0 +1,15 @@
+<table border="3">
+    <tr>
+        <th>Name</th>
+        <th>Place</th>
+        <th>Age</th>
+        <th>Qualification</th>
+    </tr>
+    <tr *ngFor="let f of allFriends">
+        <td><input type="text"  [(ngModel)]="f.name"></td>
+        <td><input type="text"  [(ngModel)]="f.place"></td>
+        <td><input type="number"  [(ngModel)]="f.age"></td>
+        <td><input type="text"  [(ngModel)]="f.qualification"></td>
+    </tr>
+    <button (click)="localAllView()">view all friends</button>
+</table>

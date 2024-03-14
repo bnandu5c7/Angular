@@ -1,0 +1,22 @@
+<h1>Register page</h1>
+<table>
+    <tr>
+        <td>Enter userName :</td>
+        <td><input type="text" [(ngModel)]="name"></td>
+    </tr>
+    <tr>
+        <td>Enter userMail :</td>
+        <td><input type="text" [(ngModel)]="email"></td>
+    </tr>
+    <tr>
+        <td>Enter userAddress :</td>
+        <td><textarea  rows="5" cols="4" [(ngModel)]="address"></textarea></td>
+    </tr>
+    <tr>
+        <td>userPhone : </td>
+        <td><input type="number" [(ngModel)]="mobile"></td>
+    </tr>
+    <tr>
+        <button  (click)="out()" [ngClass]="styleLbl">register here</button>
+    </tr>
+</table>

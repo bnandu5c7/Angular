@@ -1,0 +1,10 @@
+<br>
+<button (click)="in()"  [disabled]="m">LogIn</button>
+<button (click)="reg()" [disabled]="n">Register</button>
+<div *ngIf="isUserLogged==true;then myBlock else myElseBlock"></div>
+<ng-template #myBlock>
+    <app-login></app-login>
+</ng-template>
+<ng-template #myElseBlock>
+    <app-register></app-register>
+</ng-template>

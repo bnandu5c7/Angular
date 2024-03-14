@@ -1,0 +1,15 @@
+<h1>Welcome to Home page</h1>
+<app-home></app-home>
+<app-like-dislike></app-like-dislike>
+<h3>compound Interest Pipe</h3>
+<p>The Compound Interest is  : {{50000|compoundInterest:66:12:2|number:'1.2-2'}}</p>
+<app-fund-transfer></app-fund-transfer>
+<h2>Friend Page</h2>
+<ul>
+<li><a routerLink='/AddFriend'>Add A Friend</a></li>
+<li><a routerLink='/ViewFriend'>View A Friend</a></li>
+<li><a routerLink='/showAllFriends'>Show All Friends</a></li>
+<li><a routerLink='/ModifyFriend'>Modify Friend</a></li>
+</ul>
+
+<router-outlet></router-outlet>

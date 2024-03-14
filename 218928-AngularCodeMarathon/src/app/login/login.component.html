@@ -1,0 +1,14 @@
+<h1>login Page</h1>
+<table>
+    <tr>
+        <td>Enter UserName :</td>
+        <td><input type="text" [(ngModel)]="userName"></td>
+    </tr>
+    <tr>
+        <td>Enter UserMail :</td>
+        <td><input type="text" [(ngModel)]="userMail"></td>
+    </tr>
+<tr>
+    <button (click)="log()" [ngClass]="sLable">Sigin</button>
+</tr>
+</table>

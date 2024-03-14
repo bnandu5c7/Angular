@@ -1,0 +1,39 @@
+<h2>Fund Transfer Page</h2><br><br>
+<table border="3" cellspacing="4" cellpadding="4">
+    <tr>
+        <th>AccountNumber</th>
+        <th>AccountHolderName</th>
+        <th>Accountbalance</th>
+    </tr>
+    <tr>
+        <td>{{this.source.accountNumber}}</td>
+        <td>{{this.source.accountHolder}}</td>
+        <td>{{this.source.accountBalance}}</td>
+    </tr>   
+</table><br><br>
+<table border="3" cellspacing="4" cellpadding="4">
+    <tr>
+        <th>AccountNumber</th>
+        <th>AccountHolderName</th>
+        <th>Accountbalance</th>
+    </tr>
+    <tr>
+        <td>{{this.target.accountNumber}}</td>
+        <td>{{this.target.accountHolder}}</td>
+        <td>{{this.target.accountBalance}}</td>
+    </tr>   
+</table><br><br>
+<table border="3">
+    <tr>
+        <td>AmountToTransfer : </td>
+        <td><input type="number" [(ngModel)]="amountToTransfer"></td>
+    </tr>
+</table><br><br>
+<button (click)="transaction()" [ngClass]="tLable"> Transfer </button><br><br>
+<table border="4">
+    <tr>
+        <td>Remainder :</td>
+        <td><input type="text" [(ngModel)]="message"></td>
+    </tr>
+</table>
+
